@@ -23,6 +23,7 @@ This system should have basic functions as follows:
 	Players login, start game, invite other players, join game and exit game.
 	Voting system when a player highlights a word for getting marks.
 The system should have a good consistency, all game status ought to be synchronized in all clients at all time. Also, the design should also consider all the possible exceptions and deal with every situation.
+
 2.	Game Architecture
 The game is based on a client-server system. 
 In the server side, a port number can be input to bind an RMI connection so that the client can connect to the server though this port. Besides, when clients connect to server, a table containing clients’ user name and state is shown, and a console part will display the operations of clients.
