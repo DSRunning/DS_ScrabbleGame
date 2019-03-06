@@ -47,24 +47,24 @@ The client used Model-View-Controller architecture.
  
 5.	Critical Analysis
 Pros:
-1.	Broadcast design is adopted for update all client GUI. Once a client made a move, the server will broadcast the action to all clients. This design ensures the synchronization between all clients without frequently requesting the server.
-2.	The MVC architecture in client has low coupling feature, easy to implement and modify the functions of the GUI.
+5.1.1.	Broadcast design is adopted for update all client GUI. Once a client made a move, the server will broadcast the action to all clients. This design ensures the synchronization between all clients without frequently requesting the server.
+5.1.2.	The MVC architecture in client has low coupling feature, easy to implement and modify the functions of the GUI.
 Cons:
-1.	The multithread design in server needs to handle multiple clients, but the system memory has its limit. If many clients play the game for a long time and keep sending messages to the server, the server will reach it’s limit eventually.
-2.	The UI of clients are good but not quite attractive.
-3.	The scalability cannot be controlled by programmer due to usage of RMI, which may lead to delay when the game is processing.
+5.2.1.	The multithread design in server needs to handle multiple clients, but the system memory has its limit. If many clients play the game for a long time and keep sending messages to the server, the server will reach it’s limit eventually.
+5.2.2.	The UI of clients are good but not quite attractive.
+5.2.3.	The scalability cannot be controlled by programmer due to usage of RMI, which may lead to delay when the game is processing.
 6.	Contributions
 	Fan Yang: 
-1.	Server GUI
-2.	Server backend include start and exit game, invite player
-3.	System integration
+  Server GUI
+ 	Server backend include start and exit game, invite player
+ 	System integration
 	Haoying Zhu: 
-1.	Client GUI
-2.	Client backend Model-View-Controller implementation
-3.	System integration
+  Client GUI
+ 	Client backend Model-View-Controller implementation
+ 	System integration
 	Xian Dong: 
-1.	Sever backend include handling player login, next turn and voting system
-2.	Report writing and UML drawing
+ 	Sever backend include handling player login, next turn and voting system
+ 	Report writing and UML drawing
 	Xinhao Zhang: 
-1.	Client-Server communication and messaging, RMI implementation
-2.	Report writing
+ Client-Server communication and messaging, RMI implementation
+ 	Report writing
